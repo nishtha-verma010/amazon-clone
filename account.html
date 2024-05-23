@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .dropdown .dropbtn {
+         font-size: 16px;
+         border: none;
+         outline: none;
+         color: black;
+         padding: 14px 16px;
+         background-color: inherit;
+        margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.dropdown-content{
+    width: 460px;
+    height: 420px;
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+}
+
+.dropdown-content .button{
+    margin-top: 50px;
+    margin-left: 130px;
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: rgba(244, 211, 22, 0.77);
+    text-align: center;
+    padding-top: 3px; 
+}
+.button{
+    margin-top: 10px;
+    padding-top: 20px;
+}
+.btn-para{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 4px;
+
+}
+.drp-cont-option{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.vert-line{
+    height: 310px;
+    border-right: 1px solid black;
+    opacity: 0.6;
+    position: absolute;
+    left: 230px;
+}
+
+.opt1 p{
+    margin-left: 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.opt1 ul{
+    list-style: none;
+}
+.opt1 li{
+   
+    font-size: 14px;
+    padding: 2px 0px;
+}
+.btn-para a{
+    text-decoration: none;
+    color: rgb(138, 99, 175);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+</style>
+
+</head>
+
+
+<body>
+    <div class="dropdown">
+        <button class="dropbtn">
+            <p ><span>Hello,Sign in</span></p>
+            <p class="secondline">Accounts & Lists
+               <i class="fa fa-caret-down"></i>
+            </p>
+        </button>
+        <div class="dropdown-content">
+   
+            <div class="button">Sign in</div>
+            <p class="btn-para">New customer? <a href="#">Start here.</a></p>
+            <hr style="  opacity: 0.6;">
+
+            <div class="drp-cont-option">
+          <div class="opt1">  
+            <p>Your Lists</p>
+            <ul>
+             <li>Create a list</li>
+             <li>Find a List or Registry</li>
+            </ul>
+          </div>
+          
+           <div class="vert-line">
+
+           </div>
+
+          <div  class="opt1">  
+            <p>Your Account</p>
+            <ul>
+             <li>Account</li>
+             <li>Order</li>
+             <li>Recommendations</li>
+             <li>Browsing History</li>
+             <li>Watchlist</li>
+             <li>Video Purchase & Rentals</li>
+             <li>Kindle Unlimited</li>
+             <li>Content & Devices</li>
+             <li>Subscribe & Saved items</li>
+             <li>Membership & Subscriptions</li>
+             <li>Music Library</li>
+            </ul>
+          </div>
+        </div>
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
